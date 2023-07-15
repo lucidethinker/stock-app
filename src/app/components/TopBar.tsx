@@ -20,55 +20,56 @@ const TopBar = () => {
         <input
           type="text"
           placeholder="Search Markets"
-          className="input input-bordered w-full max-w-xs bg-opacity-30 text-white placeholder-white"
+          className="input input-bordered w-full max-w-md bg-opacity-30 text-white placeholder-white"
         />
       </div>
-
-      <div className="px-6 py-6 flex overflow-x-scroll gap-5 w-full">
-        <NavLink
-          to="/market"
-          className={({ isActive }) =>
-            isActive ? "opacity-100" : "opacity-30"
-          }
-        >
-          <h4 className="text-white font-semibold whitespace-nowrap">
-            {" "}
-            Main Market
-          </h4>
-        </NavLink>
-        <NavLink
-          to="/market"
-          className={({ isActive }) =>
-            isActive ? "opacity-100" : "opacity-30"
-          }
-        >
-          <h4 className="text-white font-semibold whitespace-nowrap">
-            {" "}
-            Junio Market
-          </h4>
-        </NavLink>
-        <NavLink
-          to="/market"
-          className={({ isActive }) =>
-            isActive ? "opacity-100" : "opacity-30"
-          }
-        >
-          <h4 className="text-white font-semibold whitespace-nowrap">
-            {" "}
-            FX Rates
-          </h4>
-        </NavLink>
-        <NavLink
-          to="/market"
-          className={({ isActive }) =>
-            isActive ? "opacity-100" : "opacity-30"
-          }
-        >
-          <h4 className="text-white font-semibold whitespace-nowrap">
-            {" "}
-            Funding
-          </h4>
-        </NavLink>
+      <div className="px-6 py-6">
+        <div className=" flex overflow-x-auto gap-5 w-full">
+          <NavLink
+            to="/market"
+            className={({ isActive }) =>
+              isActive ? "opacity-100" : "opacity-30"
+            }
+          >
+            <h4 className="text-white font-semibold whitespace-nowrap">
+              {" "}
+              Main Market
+            </h4>
+          </NavLink>
+          <NavLink
+            to="/market"
+            className={({ isActive }) =>
+              isActive ? "opacity-100" : "opacity-30"
+            }
+          >
+            <h4 className="text-white font-semibold whitespace-nowrap">
+              {" "}
+              Junior Market
+            </h4>
+          </NavLink>
+          <NavLink
+            to="/market"
+            className={({ isActive }) =>
+              isActive ? "opacity-100" : "opacity-30"
+            }
+          >
+            <h4 className="text-white font-semibold whitespace-nowrap">
+              {" "}
+              FX Rates
+            </h4>
+          </NavLink>
+          <NavLink
+            to="/market"
+            className={({ isActive }) =>
+              isActive ? "opacity-100" : "opacity-30"
+            }
+          >
+            <h4 className="text-white font-semibold whitespace-nowrap">
+              {" "}
+              Funding
+            </h4>
+          </NavLink>
+        </div>
       </div>
     </div>
   );
