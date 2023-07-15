@@ -24,7 +24,7 @@ const TopBar = () => {
         />
       </div>
       <div className="px-6 py-6">
-        <div className=" flex overflow-x-auto gap-5 w-full">
+        <div className=" flex overflow-x-auto gap-10 w-full">
           <NavLink
             to="/market"
             className={({ isActive }) =>
